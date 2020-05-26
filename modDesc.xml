@@ -4,13 +4,13 @@
     <translationsby>Castiga</translationsby>
     <version>1.0.0.0</version>
     <title><!-- en=English de=German jp=Japanese pl=Polish cz=Czech fr=French es=Spanish ru=Russian it=Italian pt=Portuguese hu=Hungary nl=Netherlands cs=Chinese (Simplified) ct=Chinese (Traditional) br=Brazilian-Portuguese tr=Turkish ro=Romanian kr=Korean -->
-        <en>EDGE Sign</en>
-        <de>EDGE Sign</de>
-        <fr>EDGE Sign</fr>
-        <es>EDGE Sign</es>
-        <ru>EDGE Sign</ru>
-        <pl>EDGE Sign</pl>
-        <it>EDGE Sign</it>
+        <en>Terminator Ultra Pack</en>
+        <de>Terminator Ultra Pack</de>
+        <fr>Terminator Ultra Pack</fr>
+        <es>Terminator Ultra Pack</es>
+        <ru>Terminator Ultra Pack</ru>
+        <pl>Terminator Ultra Pack</pl>
+        <it>Terminator Ultra Pack</it>
     </title>
     <description>
         <en><![CDATA[This Repository is a Template Repo for our FS 19 mods. It includes the necessary files for an FS19 mod.
@@ -31,10 +31,7 @@ Overloading Speed 2000 Liters Per Second.
 -Supports "Seasons", "Courseplay Six" & "MaizePlus".
 
 -If you find any bugs or got suggestions for improvment, please dont hesitate to contact us on our Github page at https://github.com/FS19-Mods-By-EDGE/
-or Contact EDGEPureGaming on facebook.
-
-Changelog 1.0.0.0:
-- Initial Realease.]]></en>
+or Contact EDGEPureGaming on facebook.]]></en>
 
 <de><![CDATA[Einige Silos für die Lagerung von Korn. Das Paket enthält vier Hofsilos und 6 Siloerweiterungen.
 
@@ -54,10 +51,7 @@ Fassungsvermögen: 100.000 Liter.
 -Unterstützt "Seasons", "Courseplay Six" und "MaizePlus".
 
 -Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, zögern Sie bitte nicht, uns auf unserer Github-Seite unter https://github.com/FS19-Mods-By-EDGE/
-zu kontaktieren oder EDGEPureGaming auf Facebook zu kontaktieren.
-
-Änderungsprotokoll 1.0.0.0:
-- Erstveröffentlichung.]]></de>
+zu kontaktieren oder EDGEPureGaming auf Facebook zu kontaktieren.]]></de>
 
         <fr><![CDATA[Quelques silos pour stocker votre Grain. Le pack contient 4 silos de ferme et 6 extensions de silo.
 
@@ -77,10 +71,7 @@ Vitesse de surcharge 2000 litres par seconde.
 -Supporte "Seasons", "Courseplay Six" & "MaizePlus".
 
 -Si vous trouvez des bugs ou avez des suggestions d'amélioration, n'hésitez pas à nous contacter sur notre page Github à https://github.com/FS19-Mods-By-EDGE/
-ou Contacter EDGEPureGaming sur facebook.
-
-Changer le journal 1.0.0.0:
-- Première version.]]></fr>
+ou Contacter EDGEPureGaming sur facebook.]]></fr>
 
         <es><![CDATA[Algunos silos para almacenar tu grano. El paquete contiene 4 silos de granja y 6 extensiones de silo.
 
@@ -100,10 +91,7 @@ Velocidad de sobrecarga de 2000 litros por segundo.
 -Soporta "Seasons", "Courseplay Six" y "MaizePlus".
 
 -Si encuentra algún error u obtiene sugerencias de mejora, no dude en contactarnos en nuestra página de Github en https://github.com/FS19-Mods-By-EDGE/
-o póngase en contacto con EDGEPureGaming en Facebook.
-
-Registro de cambios 1.0.0.0:
-- Versión inicial.]]></es>
+o póngase en contacto con EDGEPureGaming en Facebook.]]></es>
 
         <ru><![CDATA[Некоторые бункеры для хранения вашего зерна. Пакет содержит 4 бункера фермы и 6 расширений бункера.
 
@@ -120,13 +108,8 @@ Registro de cambios 1.0.0.0:
 Вместимость: 100.000 л.
 Скорость перегрузки 2000 литров в секунду.
 
--Поддержка "Seasons", "Courseplay Six" и "MaizePlus".
-
 -Если вы обнаружите какие-либо ошибки или получите предложения по улучшению, пожалуйста, не стесняйтесь связаться с нами на нашей странице Github по адресу https://github.com/FS19-Mods-By-EDGE/
-или связаться с EDGEPureGaming на Facebook.
-
-Изменения 1.0.0.0:
-- Первый выпуск.]]></ru>
+или связаться с EDGEPureGaming на Facebook.]]></ru>
 
         <pl><![CDATA[Niektóre silosy do przechowywania zboża. Pakiet zawiera 4 silosy rolnicze i 6 przedłużeń silosów.
 
@@ -143,13 +126,8 @@ Rozmiar: 14 x 15 metrów.
 Pojemność: 100 000 litrów.
 Prędkość przeciążenia 2000 litrów na sekundę.
 
--Obsługuje „Seasons”, „Courseplay Six” i „MaizePlus”.
-
 -Jeśli znajdziesz jakieś błędy lub masz sugestie dotyczące ulepszeń, nie wahaj się skontaktować z nami na naszej stronie Github pod adresem https://github.com/FS19-Mods-By-EDGE/
-lub Skontaktuj się z EDGEPureGaming na Facebooku.
-
-Lista zmian 1.0.0.0:
-- Pierwsze wydanie.]]></pl>
+lub Skontaktuj się z EDGEPureGaming na Facebooku.]]></pl>
         <it><![CDATA[Alcuni silos per conservare il grano. Il pacchetto contiene 4 silos agricoli e 6 estensioni per silo.
 
 -Tutti gli edifici hanno l'illuminazione automatica.
@@ -168,30 +146,56 @@ Velocità di sovraccarico 2000 litri al secondo.
 -Supporta "Stagioni", "Courseplay Six" e "MaizePlus".
 
 -Se trovi qualche bug o hai suggerimenti per l'improvvisazione, non esitare a contattarci sulla nostra pagina Github all'indirizzo https://github.com/FS19-Mods-By-EDGE/
-o Contatta EDGEPureGaming su Facebook.
-
-Elenco modifiche 1.0.0.0:
-- Realease iniziale.]]></it>
-	</description>
-    <iconFilename>EdgeSign_Icon.dds</iconFilename>
-    <multiplayer supported="true"/>
+o Contatta EDGEPureGaming su Facebook.]]></it>
+    </description>
+    <iconFilename>icon_terminatorUltra.dds</iconFilename>
+    <multiplayer supported="true" />
     <storeItems>
-        <storeItem xmlFilename="data/EdgeSign.xml"/>
+        <storeItem xmlFilename="data/terminatorSeed.xml"/>
+        <storeItem xmlFilename="data/terminatorShuttle.xml"/>
+        <storeItem xmlFilename="data/terminatorPlant.xml"/>
     </storeItems>
-	<l10n filenamePrefix="modDesc/modDesc_l10n"/>
     <brands>
         <brand name="EDGE" title="EDGE Industries" image="store/EDGE_Brand_Logo.dds"/>
     </brands>
-    <!-- <l10n>
-        <text name="name_MultiSellingStation">
-            <en>Multi Selling Station</en>
-            <de>Multi Verkaufsstation</de>
-            <fr>Poste De Vente Multiple</fr>
-            <es>Estación De Venta Múltiple</es>
-            <ru>Мультипродажная станция</ru>
-            <pl>Stacja Sprzedaży</pl>
-        </text>
-    </l10n> -->
+	<l10n filenamePrefix="modDesc/modDesc_l10n">
+		<text name="function_terminatorSeed">
+			<en>Rollers can remove fields as well as cleaning an area for wheel tracks, they can also be used to remove snow.</en>
+			<de>Walzen können Felder entfernen und einen Bereich für Radspuren reinigen, Sie können auch zum Entfernen von Schnee verwendet werden.</de>
+			<fr>Les rouleaux peuvent enlever les champs et nettoyer une zone pour les tracs de roues, ils peuvent également être utilisés pour enlever la neige.</fr>
+            <es>Los rodillos pueden eliminar campos, así como limpiar un área para los tracs de ruedas, También se pueden utilizar para quitar la nieve.</es>
+            <ru>Ролики могут удалить поля, а также очистить область для колесных дорожек, они также могут быть использованы для удаления снега.</ru>
+            <pl>Wałki mogą usuwać pola, a także czyścić obszar śladów kół, mogą być również używane do usuwania śniegu.</pl>
+            <it>I rulli possono rimuovere i campi e pulire un'area per le piste, possono anche essere usati per rimuovere la neve.</it>
+		</text>
+    	<text name="function_terminatorSeed">
+    		<en>Rollers can remove fields as well as cleaning an area for wheel tracks, they can also be used to remove snow.</en>
+    		<de>Walzen können Felder entfernen und einen Bereich für Radspuren reinigen, Sie können auch zum Entfernen von Schnee verwendet werden.</de>
+    		<fr>Les rouleaux peuvent enlever les champs et nettoyer une zone pour les tracs de roues, ils peuvent également être utilisés pour enlever la neige.</fr>
+            <es>Los rodillos pueden eliminar campos, así como limpiar un área para los tracs de ruedas, También se pueden utilizar para quitar la nieve.</es>
+            <ru>Ролики могут удалить поля, а также очистить область для колесных дорожек, они также могут быть использованы для удаления снега.</ru>
+            <pl>Wałki mogą usuwać pola, a także czyścić obszar śladów kół, mogą być również używane do usuwania śniegu.</pl>
+            <it>I rulli possono rimuovere i campi e pulire un'area per le piste, possono anche essere usati per rimuovere la neve.</it>
+    	</text>
+		<text name="name_terminatorSeed">
+			<en>Terminator SX</en>
+			<de>Feldwalze</de>
+			<fr>Rouleau De Terrain</fr>
+            <es>Rodillo de campo</es>
+            <ru>Полевой каток</ru>
+            <pl>Wałek polowy</pl>
+            <it>Rullo Di Campo</it>
+		</text>
+		<text name="name_terminatorPlant">
+			<en>Vortex PX</en>
+			<de>Feldwalze Pro</de>
+			<fr>Rouleau De Terrain Pro</fr>
+            <es>Rodillo de campo Pro</es>
+            <ru>Полевой каток Pro</ru>
+            <pl>Wałek polowy Pro</pl>
+            <it>Rullo Di Campo Pro</it>
+		</text>
+	</l10n>
     <credits><![CDATA[
 ## Contributors
 - Castiga, EDGE Gaming

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="terminatorShuttle" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="10" filename="$data/shared/default_normal.png"/>
+    <File fileId="11" filename="$data/vehicles/hatzenbichler/th1400/th1400Decals_diffuse.png"/>
+    <File fileId="12" filename="$data/vehicles/hatzenbichler/th1400/th1400Decals_specular.png"/>
+    <File fileId="8" filename="$data/vehicles/hatzenbichler/th1400/th1400Pipe_normal.png"/>
+    <File fileId="9" filename="$data/vehicles/hatzenbichler/th1400/th1400Pipe_specular.png"/>
+    <File fileId="2" filename="$data/vehicles/hatzenbichler/th1400/th1400_normal.png"/>
+    <File fileId="3" filename="$data/vehicles/hatzenbichler/th1400/th1400_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="default_mat" materialId="8" diffuseColor="0.498039 0.498039 0.498039 1">
+      <Normalmap fileId="10"/>
+    </Material>
+    <Material name="terminatorShuttle_mat" materialId="6" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.18 0.208 0.202 0"/>
+      <CustomParameter name="colorMat1" value="0.8046 0 0.0023 0"/>
+      <CustomParameter name="colorMat2" value="0.014 0.014 0.014 1"/>
+      <CustomParameter name="colorMat3" value="0.325 0.325 0.325 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="terminatorShuttlePipe_mat" materialId="7" diffuseColor="0.498039 0.498039 0.498039 1" alphaBlending="true" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8751 0.6524 0.0231 0"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="terminatorShuttleDecals_mat" materialId="5" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
+      <Texture fileId="11"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="terminatorShuttle.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="terminatorShuttle_main_component1" dynamic="true" compound="true" collisionMask="8397058" density="0.15" clipDistance="300" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="terminatorShuttle" translation="0 0.398397 4.37769" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="31 46 49 50 51 52 53 54 56 57 58 59 75 76 77 79 80 82 86 89">
+        <TransformGroup name="wheels" translation="0 -0.398397 -4.37769" nodeId="32">
+          <TransformGroup name="leftWheel" translation="1.67347 0.668899 -1.65994" nodeId="33"/>
+          <TransformGroup name="rightWheel" translation="-1.673 0.668899 -1.65994" nodeId="34"/>
+        </TransformGroup>
+        <TransformGroup name="attachable" translation="0 -0.398397 -4.37769" nodeId="35">
+          <TransformGroup name="attacherJoint" translation="2.27374e-15 0.381389 4.41498" rotation="0 90 0" nodeId="36"/>
+          <TransformGroup name="backAttacherJoint" translation="0.016802 0.454052 -3.07788" rotation="0 90 0" nodeId="37"/>
+          <TransformGroup name="ptoOutputNode" translation="0.0139698 0.576103 -1.84189" nodeId="38"/>
+          <Shape shapeId="3" name="detachedPipes" translation="0.0157672 0.866617 -2.99399" clipDistance="300" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="wheelChocks" nodeId="40">
+            <TransformGroup name="wheelChock02" translation="0.696 1.29341 1.55423" rotation="0 -90 0" scale="0.916419 1 1" clipDistance="300" nodeId="41"/>
+            <TransformGroup name="chockSupport01" translation="-0.515341 1.28889 1.55301" rotation="0 90 0" nodeId="42"/>
+            <TransformGroup name="chockSupport02" translation="0.515 1.28889 1.55301" rotation="0 -90 0" nodeId="43"/>
+            <TransformGroup name="wheelChock01" translation="-0.695833 1.29341 1.55423" rotation="0 90 0" scale="0.916419 1 1" clipDistance="300" nodeId="44"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="hydraulics" translation="0 -0.398397 -4.37769" nodeId="45">
+          <TransformGroup name="support" translation="-0.000952296 0.289633 3.78475" nodeId="46">
+            <Shape shapeId="4" name="colPart" translation="1.38778e-19 -0.026774 -1.13687e-15" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="47" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="covers" nodeId="48">
+            <TransformGroup name="coverSeeds" translation="-0.494374 3.47367 -0.386012" nodeId="49">
+              <TransformGroup name="coverSeedsLockArm1" translation="0.932964 -0.00359366 -3.05176e-07" nodeId="50"/>
+              <TransformGroup name="coverSeedsLockArm2" translation="0.634441 0.0017775 6.10352e-07" nodeId="51"/>
+            </TransformGroup>
+            <TransformGroup name="coverFertilizer" translation="-0.494374 3.47367 -0.386012" nodeId="52">
+              <TransformGroup name="coverFertilizerLockArm1" translation="0.932964 -0.00359366 -3.05176e-07" nodeId="53"/>
+              <TransformGroup name="coverFertilizerLockArm2" translation="0.616674 0.026496 0.902992" rotation="1.56772 178.873 0" nodeId="54"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="pipe" nodeId="55">
+            <TransformGroup name="pipeArm1" translation="0.889309 1.25383 -0.39463" nodeId="56">
+              <TransformGroup name="pipeArm2" translation="0.884643 1.23123 -1.35368" nodeId="57">
+                <TransformGroup name="pipeArm3" translation="-0.185737 -0.0527846 0.259847" nodeId="58">
+                  <TransformGroup name="pipe" translation="0.011558 -0.667542 0.11694" nodeId="59">
+                    <TransformGroup name="pipeEndJoints" translation="0 0.657591 -2.61209" nodeId="60">
+                      <TransformGroup name="pipeEndJointLeft" translation="0.00144531 0 0.113859" nodeId="61"/>
+                      <TransformGroup name="pipeEndJointRight" translation="0.00142959 0.0054038 -0.100356" nodeId="62"/>
+                      <TransformGroup name="pipeEndJointCenter" translation="1.59536 2.42602 -3.97738" nodeId="63"/>
+                    </TransformGroup>
+                    <TransformGroup name="exactFillRootNodes" translation="-0.00547714 -0.622997 2.37555" rotation="-16.5512 0 0" nodeId="64">
+                      <Shape shapeId="5" name="exactFillRootNodeSeeds" translation="-1.13687e-15 0 0" visibility="false" kinematic="true" compound="true" collisionMask="1073741824" nodeId="65" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                      <Shape shapeId="5" name="exactFillRootNodeFertilizer" visibility="false" kinematic="true" compound="true" collisionMask="1073741824" nodeId="66" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                    </TransformGroup>
+                    <TransformGroup name="effects" nodeId="67">
+                      <Shape shapeId="6" name="pipeEffectSeeds" translation="-0.00201816 0.689409 -2.60713" rotation="160.472 87.6064 70.4878" clipDistance="100" nodeId="68" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="6" name="pipeEffectFertilizer" translation="-0.00201816 0.689409 -2.60713" rotation="160.472 87.6064 70.4878" clipDistance="100" nodeId="69" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                    </TransformGroup>
+                    <TransformGroup name="pipeEndRoot" translation="0.00138474 1.11592 -2.57617" nodeId="70"/>
+                    <Shape shapeId="7" name="decals_decal" translation="-0.00129178 -0.548398 1.69182" clipDistance="30" nodeId="71" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                    <Shape shapeId="8" name="colPart1" translation="-0.0272568 -0.930697 2.36988" rotation="-16.5761 0 0" visibility="false" compoundChild="true" collisionMask="8397058" density="0.001" nodeId="72" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                    <Shape shapeId="9" name="colPart2" translation="-0.0272568 0.362139 -0.410007" rotation="26.1512 0 0" visibility="false" compoundChild="true" collisionMask="8397058" density="0.001" nodeId="73" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="arm" translation="1.12671 1.28125 -1.28753" nodeId="74"/>
+            </TransformGroup>
+            <TransformGroup name="bottomPipeMounting" translation="0.88225 1.28773 0.214574" rotation="8.74511 97.3324 0" nodeId="75">
+              <TransformGroup name="orientationArm" translation="3.55271e-14 -3.41061e-15 0.523923" rotation="27.7444 172.429 1.1716" nodeId="76"/>
+            </TransformGroup>
+            <TransformGroup name="controlArm" translation="0.870429 1.06237 0.146738" nodeId="77">
+              <TransformGroup name="referencePoint" translation="0.156503 0.0192389 -0.000368803" rotation="18.9218 269.671 2.03555e-13" nodeId="78"/>
+            </TransformGroup>
+            <TransformGroup name="lockArmPipe" translation="0.870481 1.34707 0.133177" nodeId="79"/>
+            <TransformGroup name="topPipeMounting" translation="1.58545 2.0245 -2.20948" nodeId="80">
+              <TransformGroup name="tendPartRot" translation="0.00109192 0.16219 -0.00615112" rotation="25.8883 2.49226 -5.3961" nodeId="81">
+                <TransformGroup name="tendPart" translation="0 2.84217e-16 -5.68434e-16" rotation="6.36111e-15 3.97569e-16 -2.18663e-15" nodeId="82"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="referenceFrame" translation="0.88225 1.28773 0.214574" rotation="8.74511 97.3324 0" nodeId="83"/>
+          </TransformGroup>
+          <TransformGroup name="ladders" nodeId="84">
+            <TransformGroup name="ladderLeftRot" translation="0.634897 1.30467 2.21397" rotation="-3.45774 -14.4242 21.9842" nodeId="85">
+              <TransformGroup name="ladderLeft" translation="2.84217e-16 0 2.84217e-16" rotation="-7.95139e-16 -1.59028e-15 9.93923e-16" nodeId="86">
+                <Shape shapeId="10" name="colPart" translation="1.89327e-31 -0.491355 1.5854e-15" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="87" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="ladderRightRot" translation="-0.634897 1.30467 2.21397" rotation="-3.45731 14.4249 -21.9842" nodeId="88">
+              <TransformGroup name="ladderRight" translation="-2.84217e-16 0 2.84217e-16" rotation="-1.59028e-15 -4.77083e-15 1.0138e-14" nodeId="89">
+                <Shape shapeId="10" name="colPart" translation="0 -0.491 0" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="90" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="fillable" translation="0 -0.398397 -4.37769" nodeId="91">
+          <TransformGroup name="fillVolumes" nodeId="92">
+            <TransformGroup name="seeds" nodeId="93">
+              <Shape shapeId="11" name="fillVolumeSeeds" translation="0 1.3892 -0.851184" nodeId="94" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="unloadInfoSeeds" translation="0 1.05354 -1.26976" nodeId="95"/>
+              <TransformGroup name="loadInfoSeeds" translation="0 3.40713 -1.26976" nodeId="96"/>
+            </TransformGroup>
+            <TransformGroup name="fertilizer" nodeId="97">
+              <Shape shapeId="12" name="fillVolumeFertilizer" translation="-5.22895e-17 1.3892 0.538903" nodeId="98" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="unloadInfoFertilizer" translation="0 3.40713 0.534258" nodeId="99"/>
+              <TransformGroup name="loadInfoFertilizer" translation="0 1.05354 0.534258" nodeId="100"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" translation="0 -0.398397 -4.37769" nodeId="101">
+          <Shape shapeId="13" name="decals_decal" translation="-0.0641974 -0.0222679 0" clipDistance="50" nodeId="102" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="14" name="bolt" translation="0.0165032 0.454257 -3.07749" clipDistance="300" nodeId="103" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" translation="0 -0.398397 -4.37769" visibility="false" nodeId="104">
+          <Shape shapeId="15" name="colPart01" translation="0 1.13042 2.87771" compoundChild="true" collisionMask="8194" density="0.001" nodeId="105" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="16" name="colPart03" translation="0 1.14018 -2.76556" compoundChild="true" collisionMask="8194" density="0.001" nodeId="106" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="skinnedMeshes" translation="0 -0.398397 -4.37769" nodeId="107">
+          <Shape shapeId="17" name="pipeEnd1" clipDistance="300" nodeId="108" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="70 62 61 74 63"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="41">
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock01"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock01.ma"/>
+    </UserAttribute>
+    <UserAttribute nodeId="42">
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+    </UserAttribute>
+    <UserAttribute nodeId="43">
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+    </UserAttribute>
+    <UserAttribute nodeId="44">
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock01"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock01.ma"/>
+    </UserAttribute>
+    <UserAttribute nodeId="61">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="62">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="63">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="70">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="74">
+      <Attribute name="liw" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>
