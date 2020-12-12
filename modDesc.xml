@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="47">
+<modDesc descVersion="51">
     <author>Edge Gaming</author>
     <translationsby>Castiga</translationsby>
     <version>1.0.0.0</version>
@@ -28,10 +28,7 @@ Size: 14 x 15 Meters.
 Capacity: 100.000 Litre.
 Overloading Speed 2000 Liters Per Second.
 
--Supports "Seasons", "Courseplay Six" & "MaizePlus".
-
--If you find any bugs or got suggestions for improvment, please dont hesitate to contact us on our Github page at https://github.com/FS19-Mods-By-EDGE/
-or Contact EDGEPureGaming on facebook.]]></en>
+-Supports "Seasons", "Courseplay Six" & "MaizePlus".]]></en>
 
 <de><![CDATA[Einige Silos für die Lagerung von Korn. Das Paket enthält vier Hofsilos und 6 Siloerweiterungen.
 
@@ -154,6 +151,7 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
         <storeItem xmlFilename="data/terminatorSeed.xml"/>
         <storeItem xmlFilename="data/terminatorShuttle.xml"/>
         <storeItem xmlFilename="data/terminatorPlant.xml"/>
+        <storeItem xmlFilename="data/terminatorMultiSeed.xml"/>
     </storeItems>
     <brands>
         <brand name="EDGE" title="EDGE Industries" image="store/EDGE_Brand_Logo.dds"/>
@@ -177,6 +175,15 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
             <pl>Wałki mogą usuwać pola, a także czyścić obszar śladów kół, mogą być również używane do usuwania śniegu.</pl>
             <it>I rulli possono rimuovere i campi e pulire un'area per le piste, possono anche essere usati per rimuovere la neve.</it>
     	</text>
+    	<text name="function_terminatorShuttle">
+    		<en>Rollers can remove fields as well as cleaning an area for wheel tracks, they can also be used to remove snow.</en>
+    		<de>Walzen können Felder entfernen und einen Bereich für Radspuren reinigen, Sie können auch zum Entfernen von Schnee verwendet werden.</de>
+    		<fr>Les rouleaux peuvent enlever les champs et nettoyer une zone pour les tracs de roues, ils peuvent également être utilisés pour enlever la neige.</fr>
+            <es>Los rodillos pueden eliminar campos, así como limpiar un área para los tracs de ruedas, También se pueden utilizar para quitar la nieve.</es>
+            <ru>Ролики могут удалить поля, а также очистить область для колесных дорожек, они также могут быть использованы для удаления снега.</ru>
+            <pl>Wałki mogą usuwać pola, a także czyścić obszar śladów kół, mogą być również używane do usuwania śniegu.</pl>
+            <it>I rulli possono rimuovere i campi e pulire un'area per le piste, possono anche essere usati per rimuovere la neve.</it>
+    	</text>
 		<text name="name_terminatorSeed">
 			<en>Terminator SX</en>
 			<de>Feldwalze</de>
@@ -186,8 +193,26 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
             <pl>Wałek polowy</pl>
             <it>Rullo Di Campo</it>
 		</text>
+		<text name="name_terminatorShuttle">
+			<en>Terminator TX</en>
+			<de>Feldwalze Pro</de>
+			<fr>Rouleau De Terrain Pro</fr>
+            <es>Rodillo de campo Pro</es>
+            <ru>Полевой каток Pro</ru>
+            <pl>Wałek polowy Pro</pl>
+            <it>Rullo Di Campo Pro</it>
+		</text>
 		<text name="name_terminatorPlant">
-			<en>Vortex PX</en>
+			<en>Terminator PX</en>
+			<de>Feldwalze Pro</de>
+			<fr>Rouleau De Terrain Pro</fr>
+            <es>Rodillo de campo Pro</es>
+            <ru>Полевой каток Pro</ru>
+            <pl>Wałek polowy Pro</pl>
+            <it>Rullo Di Campo Pro</it>
+		</text>
+		<text name="name_terminatorMultiSeed">
+			<en>Terminator MX</en>
 			<de>Feldwalze Pro</de>
 			<fr>Rouleau De Terrain Pro</fr>
             <es>Rodillo de campo Pro</es>

@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>name_terminatorShuttle</name>
+        <name>$l10n_name_terminatorShuttle</name>
         <specs>
             <combination>terminator</combination>
         </specs>
@@ -18,16 +18,11 @@
         <category>seeders</category>
         <shopTranslationOffset>0 0.13 0</shopTranslationOffset>
         <shopRotationOffset>0 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>1893792</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>328614</indexBufferMemoryUsage>
-        <textureMemoryUsage>13107384</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
     </storeData>
 
     <base>
         <typeDesc>$l10n_typeDesc_seederTank</typeDesc>
-        <filename>$data/vehicles/hatzenbichler/terminatorShuttle/terminatorShuttle.i3d</filename>
+        <filename>data/terminatorShuttle.i3d</filename>
         <size width="5" length="9.5"/>
         <components>
             <component centerOfMass="0 1 0" solverIterationCount="25" mass="3671"/>
@@ -40,12 +35,12 @@
 
     <wheels>
         <wheelConfigurations>
-            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="$data/shared/wheels/trelleborg/T404/850_50R30_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
-                        <wheelChock parkingNode="wheelChock01" />
-                        <wheelChock parkingNode="wheelChock02" isInverted="true" />
+                        <wheelChock filename="wheels/wheelChock.i3d" />
+                        <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
                     <wheel filename="$data/shared/wheels/trelleborg/T404/850_50R30_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.6" repr="rightWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
@@ -55,7 +50,7 @@
             <wheelConfiguration name="$l10n_configuration_TwinRadial" price="0" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="$data/shared/wheels/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -67,7 +62,7 @@
             <wheelConfiguration name="$l10n_configuration_Radial" price="950" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="$data/shared/wheels/trelleborg/T404/710_45R26_5.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -79,7 +74,7 @@
             <wheelConfiguration name="$l10n_configuration_wideRadial" price="1050" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="$data/shared/wheels/trelleborg/T404/800_40R26_5.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -91,7 +86,7 @@
             <wheelConfiguration name="$l10n_configuration_CARGOXBIB" price="1100" brand="MICHELIN">
                 <wheels>
                     <wheel filename="$data/shared/wheels/michelin/cargoXBib/710_50R26_5.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -103,7 +98,7 @@
             <wheelConfiguration name="$l10n_configuration_wideXBIB" price="1100" brand="MICHELIN">
                 <wheels>
                     <wheel filename="$data/shared/wheels/michelin/cargoXBib/800_45R26_5.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -115,7 +110,7 @@
             <wheelConfiguration name="$l10n_configuration_CXBheavyduty" price="1100" brand="MICHELIN">
                 <wheels>
                     <wheel filename="$data/shared/wheels/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -127,7 +122,7 @@
             <wheelConfiguration name="$l10n_configuration_megaXbib" price="1100" brand="MICHELIN">
                 <wheels>
                     <wheel filename="$data/shared/wheels/michelin/megaXbib/750_50R26.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -139,7 +134,7 @@
             <wheelConfiguration name="$l10n_configuration_TwinForestry" price="1700" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="wheels/trelleborg_TwinForestry.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -151,7 +146,7 @@
             <wheelConfiguration name="$l10n_configuration_Offroad" price="900" brand="NOKIAN">
                 <wheels>
                     <wheel filename="wheels/nokian_Offroad.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -163,7 +158,7 @@
             <wheelConfiguration name="$l10n_configuration_rough" price="1100" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="wheels/trelleborg_Rough.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <wheelChock filename="wheels/wheelChock.i3d" />
                         <wheelChock filename="wheels/wheelChock.i3d" isInverted="true"/>
                     </wheel>
@@ -175,7 +170,7 @@
             <wheelConfiguration name="$l10n_configuration_valueTwinWheelsNarrow" price="2000" brand="MICHELIN">
                 <wheels>
                     <wheel filename="wheels/michelin_TwinNarrow.xml" isLeft="true">
-                        <physics restLoad="1.6" repr="LeftWheel" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
+                        <physics restLoad="1.6" repr="leftWheel"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="26" damper="30" frictionScale="2"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
                             <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
@@ -229,68 +224,32 @@
             <attach template="ATTACH_01"/>
         </sounds>
     </attacherJoints>
-
     <powerTakeOffs>
         <output ptoName="hatzenbichlerTerminator18" outputNode="ptoOutputNode" attacherJointIndices="1">
             <objectChange node="detachedPipes" visibilityActive="false" visibilityInactive="true"/>
         </output>
     </powerTakeOffs>
-
-    <sprayer allowsSpraying="false" fillUnitIndex="2" unloadInfoIndex="2" loadInfoIndex="2"/>
-
     <animations>
         <animation name="moveSupport">
             <part node="support" startTime="0" endTime="0.15" startTrans="0 0.466 3.784" endTrans="0 0.15 3.784"/>
         </animation>
 
         <animation name="loadingPipe">
-            <part node="controlArm" startTime="9.5" endTime="10.0" startRot="0.0 0.0 38.5" endRot="0.0 0.0 0.0"/>
-            <part node="tendPart" startTime="9.5" endTime="10.0" startRot="0.0 0.0 -15" endRot="0.0 0.0 0.0"/>
-            <part node="pipeArm1" startTime="0.0" endTime="2.143" startRot="0.0 -67.383 0.0" endRot="0.0 -39.775 0.0"/>
-            <part node="pipeArm1" startTime="2.143" endTime="10.0" startRot="0.0 -39.775 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipeArm2" startTime="0.0" endTime="2.143" startRot="0.0 17.789 0.0" endRot="0.0 -31.321 0.0"/>
-            <part node="pipeArm2" startTime="2.143" endTime="9.5" startRot="0.0 -31.321 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipeArm3" startTime="0.0" endTime="2.143" startRot="0.0 156.102 0.0" endRot="0.0 152.569 0.0"/>
-            <part node="pipeArm3" startTime="2.143" endTime="9.5" startRot="0.0 152.569 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipe" startTime="7.857" endTime="9.5" startRot="17.78 0.0 0.0" endRot="0.0 0.0 0.0"/>
             <part node="ladderLeft" startTime="8.571" endTime="10.0" startRot="0.0 0.0 0.0" endRot="0.0 0.0 159.0"/>
             <part node="ladderRight" startTime="8.571" endTime="10.0" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -163.0"/>
 
             <!-- covers -->
-            <part node="coverSeedsLockArm2" startTime="0.05" endTime="9.5" startRot="0.0 0.0 23.093" endRot="0.0 0.0 0.0"/>
-            <part node="coverSeedsLockArm1" startTime="9.286" endTime="9.714" startRot="0.0 0.0 -29.359" endRot="0.0 0.0 0.0"/>
-            <part node="coverSeeds" startTime="7.857" endTime="9.286" startRot="0.0 0.0 102.578" endRot="0.0 0.0 0.0"/>
+            <part node="coverSeedsLockArm2" startTime="0.05" endTime="0.5" startRot="0.0 0.0 23.093" endRot="0.0 0.0 0.0"/>
+            <part node="coverSeedsLockArm1" startTime="0.3" endTime="1.0" startRot="0.0 0.0 -29.359" endRot="0.0 0.0 0.0"/>
+            <part node="coverSeeds" startTime="1.0" endTime="1.5" startRot="0.0 0.0 102.578" endRot="0.0 0.0 0.0"/>
 
-            <part node="coverFertilizerLockArm2" startTime="0.0" endTime="1.5" startRot="0.0 0.0 23.093" endRot="0.0 0.0 0.0"/>
-            <part node="coverFertilizerLockArm1" startTime="1.286" endTime="1.714" startRot="0.0 0.0 -29.359" endRot="0.0 0.0 0.0"/>
-            <part node="coverFertilizer" startTime="0.857" endTime="1.286" startRot="0.0 0.0 102.578" endRot="0.0 0.0 0.0"/>
+            <part node="coverFertilizerLockArm2" startTime="0.0" endTime="0.5" startRot="0.0 0.0 23.093" endRot="0.0 0.0 0.0"/>
+            <part node="coverFertilizerLockArm1" startTime="0.3" endTime="1.0" startRot="0.0 0.0 -29.359" endRot="0.0 0.0 0.0"/>
+            <part node="coverFertilizer" startTime="1.0" endTime="1.5" startRot="0.0 0.0 102.578" endRot="0.0 0.0 0.0"/>
 
             <part node="coverSeedsLockArm2" startTime="0.0" endTime="0.05" startRot="0.0 0.0 0.0" endRot="0.0 0.0 23.093"/>
             <part node="coverSeedsLockArm1" startTime="0" endTime="0.0.2" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -29.359"/>
             <part node="coverSeeds" startTime="0" endTime="0.8" startRot="0.0 0.0 0.0" endRot="0.0 0.0 102.578"/>
-
-            <!-- pipe end joints -->
-            <part node="pipeEndJoints" startTime="0.0" endTime="0.286" startTrans="0.0 0.658 -2.612" endTrans="0.0 0.868 -3.004" startRot="0.0 0.0 0.0" endRot="63.555 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="0.786" endTime="0.929" startTrans="0.0 0.868 -3.004" endTrans="-0.0 0.741 -2.793" startRot="63.555 0.0 0.0" endRot="31.217 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="0.929" endTime="1.286" startTrans="-0.0 0.741 -2.793" endTrans="0.0 0.868 -3.004" startRot="31.217 0.0 0.0" endRot="63.555 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="1.786" endTime="1.929" startRot="63.555 0.0 0.0" endRot="70.692 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="1.929" endTime="2.143" startTrans="0.0 0.868 -3.004" endTrans="0.0 0.658 -2.612" startRot="70.692 0.0 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="2.143" endTime="2.357" startTrans="0.0 0.658 -2.612" endTrans="0.0 0.868 -3.004" startRot="0.0 0.0 0.0" endRot="70.692 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="2.5" endTime="2.786" startRot="70.692 0.0 0.0" endRot="62.79 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="2.857" endTime="3.0" startTrans="0.0 0.868 -3.004" endTrans="-0.0 0.733 -2.854" startRot="62.79 0.0 0.0" endRot="33.266 0.0 0.0"/>
-            <part node="pipeEndJoints" startTime="3.0" endTime="3.429" startTrans="-0.0 0.733 -2.854" endTrans="0.0 0.658 -2.612" startRot="33.266 0.0 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipeEndJointLeft" startTime="0.0" endTime="0.286" startTrans="0.001 0.0 0.114" endTrans="0.001 -0.0 0.087" startRot="0.0 0.0 0.0" endRot="8.711 0.0 0.0"/>
-            <part node="pipeEndJointLeft" startTime="0.786" endTime="0.929" startTrans="0.001 -0.0 0.087" endTrans="0.001 0.0 0.114" startRot="8.711 0.0 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipeEndJointLeft" startTime="0.929" endTime="1.286" startTrans="0.001 0.0 0.114" endTrans="0.001 -0.0 0.087" startRot="0.0 0.0 0.0" endRot="8.711 0.0 0.0"/>
-            <part node="pipeEndJointLeft" startTime="1.929" endTime="2.143" startTrans="0.001 -0.0 0.087" endTrans="0.001 0.0 0.114" startRot="8.711 0.0 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipeEndJointLeft" startTime="2.143" endTime="2.357" startTrans="0.001 0.0 0.114" endTrans="0.001 -0.0 0.087" startRot="0.0 0.0 0.0" endRot="8.711 0.0 0.0"/>
-            <part node="pipeEndJointLeft" startTime="3.0" endTime="3.429" startTrans="0.001 -0.0 0.087" endTrans="0.001 0.0 0.114" startRot="8.711 0.0 0.0" endRot="0.0 0.0 0.0"/>
-            <part node="pipeEndJointRight" startTime="0.0" endTime="0.286" startTrans="0.001 0.005 -0.1" endTrans="0.001 0.005 -0.045"/>
-            <part node="pipeEndJointRight" startTime="0.786" endTime="0.929" startTrans="0.001 0.005 -0.045" endTrans="0.001 0.005 -0.013"/>
-            <part node="pipeEndJointRight" startTime="0.929" endTime="1.286" startTrans="0.001 0.005 -0.013" endTrans="0.001 0.005 -0.045"/>
-            <part node="pipeEndJointRight" startTime="1.929" endTime="2.143" startTrans="0.001 0.005 -0.045" endTrans="0.001 0.005 -0.1"/>
-            <part node="pipeEndJointRight" startTime="2.143" endTime="2.357" startTrans="0.001 0.005 -0.1" endTrans="0.001 0.005 -0.045"/>
-            <part node="pipeEndJointRight" startTime="3.0" endTime="3.429" startTrans="0.001 0.005 -0.045" endTrans="0.001 0.005 -0.1"/>
 
             <!-- effects -->
             <part node="effects" startTime="0" endTime="0.01" visibility="true"/>
@@ -299,48 +258,124 @@
             <part node="effects" startTime="2.143" endTime="10" visibility="false"/>
         </animation>
     </animations>
-
-    <cylindered>
-        <movingTools>
-            <movingTool node="controlArm" playSound="true">
-                <dependentPart node="bottomPipeMounting"/>
-            </movingTool>
-            <movingTool node="pipeArm1" playSound="true"/>
-            <movingTool node="pipeArm2" playSound="true"/>
-            <movingTool node="pipeArm3" playSound="true"/>
-            <movingTool node="pipe" playSound="true"/>
-        </movingTools>
-
-        <movingParts>
-            <movingPart node="bottomPipeMounting" referencePoint="referencePoint" localReferencePoint="orientationArm" referenceFrame="referenceFrame">
-                <dependentPart node="orientationArm"/>
-            </movingPart>
-            <movingPart node="orientationArm" referencePoint="referencePoint" referenceFrame="referencePoint"/>
-        </movingParts>
-
-        <sounds>
-            <hydraulic template="DEFAULT_HYDRAULIC_SOUND" linkNode="0>"/>
-        </sounds>
-    </cylindered>
-
+    <configurationSets title="$l10n_configuration_storage">
+        <configurationSet name="$l10n_config_5050" price="0">
+            <configuration name="fillVolume"   index="1" />
+            <configuration name="fillUnit"     index="1" />
+        </configurationSet>
+        <configurationSet name="$l10n_config_6040" price="500">
+            <configuration name="fillVolume"   index="1" />
+            <configuration name="fillUnit"     index="2" />
+        </configurationSet>
+        <configurationSet name="$l10n_config_7030" price="500">
+            <configuration name="fillVolume"   index="1" />
+            <configuration name="fillUnit"     index="3" />
+        </configurationSet>
+        <configurationSet name="$l10n_config_8020" price="500">
+            <configuration name="fillVolume"   index="1" />
+            <configuration name="fillUnit"     index="4" />
+        </configurationSet>
+        <configurationSet name="$l10n_config_seed" price="0">
+            <configuration name="fillVolume"   index="2" />
+            <configuration name="fillUnit"     index="5" />
+        </configurationSet>
+        <configurationSet name="$l10n_config_4060" price="500">
+            <configuration name="fillVolume"   index="1" />
+            <configuration name="fillUnit"     index="6" />
+        </configurationSet>
+        <configurationSet name="$l10n_config_3070" price="500">
+            <configuration name="fillVolume"   index="1" />
+            <configuration name="fillUnit"     index="7" />
+        </configurationSet>
+        <configurationSet name="$l10n_config_2080" price="500">
+            <configuration name="fillVolume"   index="1" />
+            <configuration name="fillUnit"     index="8" />
+        </configurationSet>
+    </configurationSets>
     <fillUnit>
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
                     <unloading width="38" offset="0 0 0" />
-                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="10120">
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="9000">
                         <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
-
-                        <fillEffect>
-                            <effectNode effectNode="pipeEffectSeeds" materialType="unloading" materialTypeId="1" delay="0.2" fadeTime="0.5" speed="0.9" scrollLength="9" scrollSpeed="0.8" />
-                        </fillEffect>
                     </fillUnit>
-                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="4600">
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="9000">
                         <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="0.1"/>
-
-                        <fillEffect>
-                            <effectNode effectNode="pipeEffectFertilizer" materialType="unloading" materialTypeId="1" delay="0.2" fadeTime="0.5" speed="0.9" scrollLength="9" scrollSpeed="0.8" />
-                        </fillEffect>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="38" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="10800">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
+                    </fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="7200">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="0.1"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="38" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="12600">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
+                    </fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="5400">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="0.1"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="38" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="14400">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
+                    </fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="3600">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="0.1"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="38" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="18000">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="38" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="7200">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
+                    </fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="10800">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="0.1"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="38" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="5400">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
+                    </fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="12600">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="0.1"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading width="38" offset="0 0 0" />
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="seeds" capacity="3600">
+                        <exactFillRootNode node="exactFillRootNodeSeeds" extraEffectDistance="0.3"/>
+                    </fillUnit>
+                    <fillUnit unit="$l10n_unit_literShort" fillTypes="fertilizer" capacity="14600">
+                        <exactFillRootNode node="exactFillRootNodeFertilizer" extraEffectDistance="0.1"/>
                     </fillUnit>
                 </fillUnits>
             </fillUnitConfiguration>
@@ -352,6 +387,11 @@
                 <volumes>
                     <volume node="fillVolumeSeeds" fillUnitIndex="1" maxDelta="0.0" maxAllowedHeapAngle="5"/>
                     <volume node="fillVolumeFertilizer" fillUnitIndex="2" maxDelta="0.0" maxAllowedHeapAngle="5"/>
+                </volumes>
+            </fillVolumeConfiguration>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolumeSeeds" fillUnitIndex="1"/>
                 </volumes>
             </fillVolumeConfiguration>
         </fillVolumeConfigurations>
@@ -375,12 +415,12 @@
     <sowingMachine isTank="true" fillUnitIndex="1">
         <seedFruitTypeCategories>sowingMachine planter</seedFruitTypeCategories>
     </sowingMachine>
-
+    <sprayer allowsSpraying="false" fillUnitIndex="2" unloadInfoIndex="2" loadInfoIndex="2"/>
     <cover>
         <coverConfigurations>
             <coverConfiguration>
-                <cover openAnimation="loadingPipe" openAnimationStopTime="0.2142" fillUnitIndices="1" openOnBuy="false"/>
-                <cover openAnimation="loadingPipe" openAnimationStopTime="0" closeAnimation="loadingPipe" closeAnimationStopTime="1" fillUnitIndices="2" openOnBuy="false"/>
+                <cover openAnimation="loadingPipe" openAnimationStopTime="0.2142" fillUnitIndices="1" openOnBuy="true"/>
+                <cover openAnimation="loadingPipe" openAnimationStopTime="0" closeAnimation="loadingPipe" closeAnimationStopTime="1" fillUnitIndices="2" openOnBuy="true"/>
             </coverConfiguration>
         </coverConfigurations>
     </cover>
@@ -544,7 +584,7 @@
 		<designMaterialConfiguration name="$l10n_color_KRONE" 		    color="KRONE_GREEN1" 		material="0"/>
 		<designMaterialConfiguration name="$l10n_color_NEWHOLLAND" 	    color="NEWHOLLAND_YELLOW1" 	material="0"/>
         <designMaterialConfiguration name="$l10n_color_PINK"            color="0.880 0.130 0.540 1" material="0"/>
-        <material name="terminatorPlant_mat" shaderParameter="colorMat0"/>
+        <material name="terminatorShuttle_mat" shaderParameter="colorMat0"/>
     </designMaterialConfigurations>
     <rimColorConfigurations useDefaultColors="true" price="300" defaultColorIndex="12">
             <!--Matte-->

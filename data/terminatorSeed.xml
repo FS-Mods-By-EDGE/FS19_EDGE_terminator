@@ -2,7 +2,7 @@
 <vehicle type="fertilizingSowingMachine">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
     <storeData>
-        <name>name_terminatorSeed</name>
+        <name>$l10n_name_terminatorSeed</name>
         <specs>
             <neededPower>450</neededPower>
             <workingWidth>18</workingWidth>
