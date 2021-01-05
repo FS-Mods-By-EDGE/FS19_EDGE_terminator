@@ -2,13 +2,14 @@
 <vehicle type="fertilizingSowingMachine">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
     <storeData>
-        <name>$l10n_name_terminatorMultiSeed</name>
+        <name>$l10n_name_terminatorMulti</name>
         <specs>
             <neededPower>450</neededPower>
             <workingWidth>18</workingWidth>
             <combination>$l10n_combo_terminatorShuttle</combination>
         </specs>
         <functions>
+            <function>$l10n_function_terminatorMulti</function>
             <function>$l10n_function_sowingMachine</function>
             <function>$l10n_function_sowingMachineDirect</function>
         </functions>
@@ -24,7 +25,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_sowingMachine</typeDesc>
-        <filename>data/terminatorMultiSeed.i3d</filename>
+        <filename>$data/vehicles/hatzenbichler/terminator18/terminator18.i3d</filename>
         <size width="7.5" length="11" lengthOffset="1.7"/>
         <speedLimit value="18"/>
         <components>
@@ -136,17 +137,17 @@
 
     <attachable>
         <inputAttacherJoints>
-            <inputAttacherJoint node="attacherJoint" rootNode="terminatorMultiSeed_drawbar_component2" jointType="trailerLow" attacherHeight="0.52"/>
+            <inputAttacherJoint node="attacherJoint" rootNode="terminator18_drawbar_component2" jointType="trailerLow" attacherHeight="0.52"/>
         </inputAttacherJoints>
         <support animationName="moveSupport"/>
         <brakeForce>1.2</brakeForce>
     </attachable>
 
     <powerTakeOffs>
-        <input ptoName="hatzenbichlerterminatorMultiSeed" inputAttacherJointIndices="1" inputNode="ptoInputNode" aboveAttacher="true" filename="$data/vehicles/hatzenbichler/th1400/th1400Hoses.xml"/>
+        <input ptoName="hatzenbichlerterminator18" inputAttacherJointIndices="1" inputNode="ptoInputNode" aboveAttacher="true" filename="$data/vehicles/hatzenbichler/th1400/th1400Hoses.xml"/>
     </powerTakeOffs>
 
-    <powerConsumer forceNode="terminatorMultiSeed_main_component1" maxForce="32" ptoRpm="450" neededMaxPtoPower="100"/>
+    <powerConsumer forceNode="terminator18_main_component1" maxForce="32" ptoRpm="450" neededMaxPtoPower="100"/>
 
     <groundReferenceNodes>
         <groundReferenceNode node="centerArmDepthNode" forceFactor="0.2" threshold="0.12" depthNode="centerArmDepthNode"/>
@@ -337,7 +338,7 @@
 
         <movingParts>
             <!-- drawbar component -->
-            <movingPart node="drawbar"       referencePoint="referencePointDrawbar" referenceFrame="terminatorMultiSeed_main_component1" isActiveDirty="true" limitedAxis="1"/>
+            <movingPart node="drawbar"       referencePoint="referencePointDrawbar" referenceFrame="terminator18_main_component1" isActiveDirty="true" limitedAxis="1"/>
 
             <!-- left arms -->
             <movingPart node="leftArm1"       referencePoint="leftArm1Ref" referenceFrame="leftArm1RefFrame" isActiveDirty="true" limitedAxis="3"/>
@@ -516,12 +517,12 @@
         </fillUnitConfigurations>
     </fillUnit>
     <sowingMachine fillUnitIndex="1">
-		<seedFruitTypes>grass wheat barley potato sugarBeet maize canola oat sugarCane sunflower soybean oilseedradish cotton poplar carrot onion hops rye hemp poppy spelt millet alfalfa sorghum triticale tobacco</seedFruitTypes>
+		<seedFruitTypeCategories>sowingMachine planter</seedFruitTypeCategories>
         <useDirectPlanting value="true"/>
         <needsActivation value="true"/>
         <sounds>
-            <work template="DEFAULT_SOWING_WORK" linkNode="terminatorMultiSeed_main_component1" />
-            <airBlower template="DEFAULT_SOWING_AIR_BLOWER" linkNode="terminatorMultiSeed_main_component1" />
+            <work template="DEFAULT_SOWING_WORK" linkNode="terminator18_main_component1" />
+            <airBlower template="DEFAULT_SOWING_AIR_BLOWER" linkNode="terminator18_main_component1" />
         </sounds>
     </sowingMachine>
 
@@ -544,7 +545,10 @@
     </foliageBending>
 
     <baseMaterial>
-        <material name="terminatorMultiSeed_mat" baseNode="terminatorMultiSeed">
+        <material name="terminator18Drum_mat" baseNode="centerArmCultivatorUnitWheels">
+            <shaderParameter name="colorMat0" value="HATZENBICHLER_RED"/>
+        </material>
+        <material name="terminator18_mat" baseNode="terminator18">
             <shaderParameter name="colorMat0" value="HATZENBICHLER_RED"/>
             <shaderParameter name="colorMat1" value="HATZENBICHLER_YELLOW"/>
             <shaderParameter name="colorMat2" value="HATZENBICHLER_GREEN"/>
@@ -623,9 +627,9 @@
 		<baseMaterialConfiguration name="$l10n_color_KRONE" 		        color="KRONE_GREEN1" 		material="0"/>
 		<baseMaterialConfiguration name="$l10n_color_NEWHOLLAND" 	        color="NEWHOLLAND_YELLOW1" 	material="0"/>
         <baseMaterialConfiguration name="$l10n_color_PINK"                  color="0.880 0.130 0.540 1" material="0"/>
-        <material name="terminatorMultiSeed_mat" shaderParameter="colorMat0"/>
+        <material name="terminator18_mat" shaderParameter="colorMat0"/>
     </baseMaterialConfigurations>
-    <designMaterialConfigurations price="1000" useDefaultColors="true" defaultColorIndex="8">
+    <designMaterialConfigurations price="500" useDefaultColors="true" defaultColorIndex="8">
             <!--Matte-->
 		<designMaterialConfiguration name="$l10n_color_ITRUNNERMATTE" 	      color="0.038 0.037 0.048 1" material="1"/>
         <designMaterialConfiguration name="$l10n_color_EDGEGOLDMATTE"         color="0.776 0.667 0.341 1" material="1"/>
@@ -698,7 +702,8 @@
 		<designMaterialConfiguration name="$l10n_color_KRONE" 		    color="KRONE_GREEN1" 		material="0"/>
 		<designMaterialConfiguration name="$l10n_color_NEWHOLLAND" 	    color="NEWHOLLAND_YELLOW1" 	material="0"/>
         <designMaterialConfiguration name="$l10n_color_PINK"            color="0.880 0.130 0.540 1" material="0"/>
-        <material name="terminatorMultiSeed_mat" shaderParameter="colorMat2"/>
+        <material name="terminator18Drum_mat" shaderParameter="colorMat0"/>
+        <material name="terminator18_mat" shaderParameter="colorMat2"/>
     </designMaterialConfigurations>
     <rimColorConfigurations useDefaultColors="true" price="300" defaultColorIndex="12">
             <!--Matte-->
@@ -779,8 +784,8 @@
     <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
 
     <i3dMappings>
-        <i3dMapping id="terminatorMultiSeed_main_component1" node="0>" />
-        <i3dMapping id="terminatorMultiSeed" node="0>0" />
+        <i3dMapping id="terminator18_main_component1" node="0>" />
+        <i3dMapping id="terminator18" node="0>0" />
         <i3dMapping id="wheels" node="0>0|0" />
         <i3dMapping id="frontWheelLeft" node="0>0|0|0" />
         <i3dMapping id="frontWheelLeftRepr" node="0>0|0|0|0" />
@@ -994,7 +999,7 @@
         <i3dMapping id="skinnedMeshes" node="0>0|8" />
         <i3dMapping id="blackPipes" node="0>0|8|0" />
         <i3dMapping id="yellowPipes" node="0>0|8|1" />
-        <i3dMapping id="terminatorMultiSeed_drawbar_component2" node="1>" />
+        <i3dMapping id="terminator18_drawbar_component2" node="1>" />
         <i3dMapping id="attacherJoint" node="1>0" />
         <i3dMapping id="ptoInputNode" node="1>0|0" />
         <i3dMapping id="referencePointDrawbar" node="1>1" />

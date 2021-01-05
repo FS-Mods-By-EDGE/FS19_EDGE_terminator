@@ -3,31 +3,8 @@
 <author>Edge Gaming / Castiga</author>
 <translationby>Castiga</translationby>
 	<texts>
-		<text name="combo_terminator"			text="EDGE Terminator"/>
-		<text name="combo_terminatorShuttle"	text="Terminator Seed Shuttle"/>
-		<text name="configuration_storage"		text="Tank Size"/>
-        <text name="configuration_Design"		text="Detail Painted"/>
-        <text name="configuration_Painted"		text="Painted"/>
-        <text name="action_foldWARNING"			text="Fold Warning Signs"/>
-        <text name="action_unfoldWARNING"		text="Unfold Warning Signs"/>
-        <text name="configuration_warningSigns"	text="Warning Signs"/>
-        <text name="config_warningSigns"		text="Foldable Warning Signs"/>
-        <text name="config_noWarningSigns"		text="No Warning Signs"/>
-        <text name="configuration_attacher"		text="Attacher"/>
-        <text name="config_attacherNewDesign"	text="Custom Detail Painted"/>
-        <text name="config_attacherNewPaint"	text="Custom Painted"/>
-        <text name="config_attacherDesign"		text="Default Detail Painted"/>
-        <text name="config_attacherPaint"		text="Default Painted"/>
-        <text name="config_lights"				text="Lights"/>
-        <text name="config_beacon"				text="Beacon Lights"/>
-        <text name="config_work"				text="Work Lights"/>
-        <text name="config_noLight"				text="No Lights"/>
-        <text name="config_beaconWork"			text="Beacon & Work Lights"/>
-        <text name="config_decalWhite"			text="White Decals"/>
-        <text name="config_decalBlack"			text="Black Decals"/>
-        <text name="config_decalDesign"			text="Gold Decals"/>
-        <text name="config_decal"				text="Default Decals"/>
-        <text name="configuration_decal"		text="Decal Design"/>
+	  	<text name="combo_terminator"			text="Terminator Seeders"/>
+	  	<text name="combo_terminatorShuttle"	text="Terminator Seed Shuttle"/>
         <text name="configuration_TwinRadial" 	text="Twin Radial"/>
         <text name="configuration_CARGOXBIB" 	text="Cargo"/>
         <text name="configuration_CXBheavyduty" text="Heavy Duty"/>

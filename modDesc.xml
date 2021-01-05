@@ -158,7 +158,7 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
     </brands>
 	<l10n filenamePrefix="modDesc/modDesc_l10n">
 		<text name="function_terminatorSeed">
-			<en>Rollers can remove fields as well as cleaning an area for wheel tracks, they can also be used to remove snow.</en>
+			<en>This is the Seeder version of the Terminator.</en>
 			<de>Walzen können Felder entfernen und einen Bereich für Radspuren reinigen, Sie können auch zum Entfernen von Schnee verwendet werden.</de>
 			<fr>Les rouleaux peuvent enlever les champs et nettoyer une zone pour les tracs de roues, ils peuvent également être utilisés pour enlever la neige.</fr>
             <es>Los rodillos pueden eliminar campos, así como limpiar un área para los tracs de ruedas, También se pueden utilizar para quitar la nieve.</es>
@@ -166,8 +166,17 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
             <pl>Wałki mogą usuwać pola, a także czyścić obszar śladów kół, mogą być również używane do usuwania śniegu.</pl>
             <it>I rulli possono rimuovere i campi e pulire un'area per le piste, possono anche essere usati per rimuovere la neve.</it>
 		</text>
-    	<text name="function_terminatorSeed">
-    		<en>Rollers can remove fields as well as cleaning an area for wheel tracks, they can also be used to remove snow.</en>
+    	<text name="function_terminatorPlant">
+    		<en>This is the Planter version of the Terminator.</en>
+    		<de>Walzen können Felder entfernen und einen Bereich für Radspuren reinigen, Sie können auch zum Entfernen von Schnee verwendet werden.</de>
+    		<fr>Les rouleaux peuvent enlever les champs et nettoyer une zone pour les tracs de roues, ils peuvent également être utilisés pour enlever la neige.</fr>
+            <es>Los rodillos pueden eliminar campos, así como limpiar un área para los tracs de ruedas, También se pueden utilizar para quitar la nieve.</es>
+            <ru>Ролики могут удалить поля, а также очистить область для колесных дорожек, они также могут быть использованы для удаления снега.</ru>
+            <pl>Wałki mogą usuwać pola, a także czyścić obszar śladów kół, mogą być również używane do usuwania śniegu.</pl>
+            <it>I rulli possono rimuovere i campi e pulire un'area per le piste, possono anche essere usati per rimuovere la neve.</it>
+    	</text>
+    	<text name="function_terminatorMulti">
+    		<en>This is the Multi Seed version of the Terminator.</en>
     		<de>Walzen können Felder entfernen und einen Bereich für Radspuren reinigen, Sie können auch zum Entfernen von Schnee verwendet werden.</de>
     		<fr>Les rouleaux peuvent enlever les champs et nettoyer une zone pour les tracs de roues, ils peuvent également être utilisés pour enlever la neige.</fr>
             <es>Los rodillos pueden eliminar campos, así como limpiar un área para los tracs de ruedas, También se pueden utilizar para quitar la nieve.</es>
@@ -176,7 +185,7 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
             <it>I rulli possono rimuovere i campi e pulire un'area per le piste, possono anche essere usati per rimuovere la neve.</it>
     	</text>
     	<text name="function_terminatorShuttle">
-    		<en>Rollers can remove fields as well as cleaning an area for wheel tracks, they can also be used to remove snow.</en>
+    		<en>This tank works with the terminator Seeder, Planter &amp; Multi Seeder.</en>
     		<de>Walzen können Felder entfernen und einen Bereich für Radspuren reinigen, Sie können auch zum Entfernen von Schnee verwendet werden.</de>
     		<fr>Les rouleaux peuvent enlever les champs et nettoyer une zone pour les tracs de roues, ils peuvent également être utilisés pour enlever la neige.</fr>
             <es>Los rodillos pueden eliminar campos, así como limpiar un área para los tracs de ruedas, También se pueden utilizar para quitar la nieve.</es>
@@ -186,39 +195,15 @@ o Contatta EDGEPureGaming su Facebook.]]></it>
     	</text>
 		<text name="name_terminatorSeed">
 			<en>Terminator SX</en>
-			<de>Feldwalze</de>
-			<fr>Rouleau De Terrain</fr>
-            <es>Rodillo de campo</es>
-            <ru>Полевой каток</ru>
-            <pl>Wałek polowy</pl>
-            <it>Rullo Di Campo</it>
 		</text>
 		<text name="name_terminatorShuttle">
 			<en>Terminator TX</en>
-			<de>Feldwalze Pro</de>
-			<fr>Rouleau De Terrain Pro</fr>
-            <es>Rodillo de campo Pro</es>
-            <ru>Полевой каток Pro</ru>
-            <pl>Wałek polowy Pro</pl>
-            <it>Rullo Di Campo Pro</it>
 		</text>
 		<text name="name_terminatorPlant">
 			<en>Terminator PX</en>
-			<de>Feldwalze Pro</de>
-			<fr>Rouleau De Terrain Pro</fr>
-            <es>Rodillo de campo Pro</es>
-            <ru>Полевой каток Pro</ru>
-            <pl>Wałek polowy Pro</pl>
-            <it>Rullo Di Campo Pro</it>
 		</text>
-		<text name="name_terminatorMultiSeed">
+		<text name="name_terminatorMulti">
 			<en>Terminator MX</en>
-			<de>Feldwalze Pro</de>
-			<fr>Rouleau De Terrain Pro</fr>
-            <es>Rodillo de campo Pro</es>
-            <ru>Полевой каток Pro</ru>
-            <pl>Wałek polowy Pro</pl>
-            <it>Rullo Di Campo Pro</it>
 		</text>
 	</l10n>
     <credits><![CDATA[
