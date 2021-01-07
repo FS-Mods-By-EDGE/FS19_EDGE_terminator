@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="51">
+<modDesc descVersion="53">
     <author>Edge Gaming</author>
-    <translationsby>Castiga</translationsby>
     <version>1.0.0.0</version>
     <title><!-- en=English de=German jp=Japanese pl=Polish cz=Czech fr=French es=Spanish ru=Russian it=Italian pt=Portuguese hu=Hungary nl=Netherlands cs=Chinese (Simplified) ct=Chinese (Traditional) br=Brazilian-Portuguese tr=Turkish ro=Romanian kr=Korean -->
         <en>Terminator Ultra Pack</en>
@@ -13,11 +12,9 @@
         <it>Terminator Ultra Pack</it>
     </title>
     <description>
-        <en><![CDATA[This Repository is a Template Repo for our FS 19 mods. It includes the necessary files for an FS19 mod.
+        <en><![CDATA[The amazing Hatzenbichler Terminator just got a rework! In this pack containing 3 versions of it, you get a Multi Fruit version, a Seeder and a Planter. making it possible to do so much with these great machines!
 
--All buildings have automatic lighting.
--All Buildings supports "Seasons" and "Courseplay Six".
--All Buildings have FillTypeCategories: Farmsilo (to Support Custom Fruits)
+Enjoy the fun farming.
 
 --Technical Info--
 
