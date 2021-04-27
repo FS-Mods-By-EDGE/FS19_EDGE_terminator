@@ -142,7 +142,7 @@ Velocità di sovraccarico 2000 litri al secondo.
 -Se trovi qualche bug o hai suggerimenti per l'improvvisazione, non esitare a contattarci sulla nostra pagina Github all'indirizzo https://github.com/FS19-Mods-By-EDGE/
 o Contatta EDGEPureGaming su Facebook.]]></it>
     </description>
-    <iconFilename>icon_terminatorUltra.dds</iconFilename>
+    <iconFilename>terminatorUltra_Icon.dds</iconFilename>
     <multiplayer supported="true" />
     <storeItems>
         <storeItem xmlFilename="data/terminatorSeed.xml"/>
